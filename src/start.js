@@ -1,7 +1,6 @@
 
 
 const homeContent = () =>{
-    console.log("Running from Tems from start");
     const content = document.getElementById('content');
     const box = document.createElement('div');
     const div = document.createElement('div');
