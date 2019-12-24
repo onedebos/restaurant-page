@@ -1,6 +1,6 @@
-import { homeContent } from './start';
-import { createContact } from './contact';
-import { createMenu } from './menu';
+import homeContent from './start';
+import createContact from './contact';
+import createMenu from './menu';
 
 homeContent();
 createContact();
@@ -18,40 +18,42 @@ const grabBtns = ((menuBtn, contactBtn, homeBtn) => {
 
 const Tabs = () => {
   const hideTabs = () => {
-    contactTab.style.display = "none";
-    menuTab.style.display = "none";
+    contactTab.style.display = 'none';
+    menuTab.style.display = 'none';
   };
 
   const showMenu = () => {
-    menuTab.style.display = "block";
-    contactTab.style.display = "none";
+    menuTab.style.display = 'block';
+    contactTab.style.display = 'none';
   };
 
   const showContact = () => {
-    contactTab.style.display = "block";
-    menuTab.style.display = "none";
+    contactTab.style.display = 'block';
+    menuTab.style.display = 'none';
   };
 
   const showHome = () => {
-    contactTab.style.display = "none";
-    menuTab.style.display = "none";
+    contactTab.style.display = 'none';
+    menuTab.style.display = 'none';
   };
 
-  return { hideTabs, showMenu, showContact, showHome };
+  return {
+    hideTabs, showMenu, showContact, showHome,
+  };
 };
 
 
 const tab = Tabs();
 tab.hideTabs();
 
-grabBtns.contactBtn.onclick = function() {
+grabBtns.contactBtn.onclick = () => {
   tab.showContact();
 };
 
-grabBtns.homeBtn.onclick = function() {
+grabBtns.homeBtn.onclick = () => {
   tab.showHome();
 };
 
-grabBtns.menuBtn.onclick = function() {
+grabBtns.menuBtn.onclick = () => {
   tab.showMenu();
 };

@@ -16,4 +16,4 @@ const createContact = (contactDiv) => {
   return { contactDiv };
 };
 
-export default { createContact };
+export default createContact;
