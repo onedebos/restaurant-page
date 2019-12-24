@@ -1,18 +1,18 @@
-import { homeContent } from "./start";
-import { createContact } from "./contact";
-import { createMenu } from "./menu";
+import { homeContent } from './start';
+import { createContact } from './contact';
+import { createMenu } from './menu';
 
 homeContent();
 createContact();
 createMenu();
 
-const contactTab = document.querySelector(".contact");
-const menuTab = document.querySelector(".menu");
+const contactTab = document.querySelector('.contact');
+const menuTab = document.querySelector('.menu');
 
 const grabBtns = ((menuBtn, contactBtn, homeBtn) => {
-  menuBtn = document.querySelector("#menu-btn");
-  homeBtn = document.querySelector("#home-btn");
-  contactBtn = document.querySelector("#contact-btn");
+  menuBtn = document.querySelector('#menu-btn');
+  homeBtn = document.querySelector('#home-btn');
+  contactBtn = document.querySelector('#contact-btn');
   return { menuBtn, contactBtn, homeBtn };
 })();
 
