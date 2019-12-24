@@ -13,4 +13,4 @@ const createMenu = () => {
   wrapper.appendChild(menuDiv);
 };
 
-export default { createMenu };
+export default createMenu;

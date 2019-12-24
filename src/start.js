@@ -18,4 +18,4 @@ const homeContent = () => {
   logo.src = '/img/logo.png';
 };
 
-export default { homeContent };
+export default homeContent;
