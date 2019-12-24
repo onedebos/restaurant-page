@@ -1,6 +1,6 @@
 # Restaurant Page
 
-> Building a bare-bones restaurant page using Javascript modules and webpack.
+> Building a bare-bones restaurant page using Javascript modules and webpack. Javascript is used to genereate the entire content of the website.
 
 ![screenshot](./screenshot.png)
 
@@ -9,18 +9,24 @@
 - HTML, CSS, Javascript
 - Webpack
 
+## Linters used
+- ESlint
+
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://onedebos.github.io/restaurant-page/)
 
+## Clone the project
+```
+git clone https://github.com/onedebos/restaurant-page.git
+```
 
-## Getting Started
+## Install dependencies
 
-**Run npm init to load all node modules used**
-**Run the index.html file in the dist folder**
-
-
+```
+npm install
+```
 
 
 ## Authors
